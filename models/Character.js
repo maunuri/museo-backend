@@ -2,7 +2,7 @@ const {Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../dbconnection');
 
 const Character = sequelize.define('character', { //create database model for user-created characters
-    userid: {
+    id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true
