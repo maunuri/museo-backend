@@ -5,7 +5,8 @@ const Character = sequelize.define('character', { //create database model for us
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true,
     },
     head: {
         type: DataTypes.INTEGER,
