@@ -11,7 +11,7 @@ const charactercontroller = {
     findCharacter: (req, res) => { // find a specific character by id
         Character.findOne({
             where: {
-                id: req.params.userid
+                id: req.params.id
             },
         }).then((character) => {
             res.json(character);
