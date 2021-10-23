@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const sequelize = require('sequelize'); //enable sequelize orm
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
